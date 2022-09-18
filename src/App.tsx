@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, MouseEvent} from 'react';
 import './App.css';
+import MapTask from "./micro/MapTask";
+import TopCars from "./micro/MapCars";
+
+import UseStateTask from "./micro/UseStateTask";
+import FilterTask from "./micro/FilterTask"
+import ButtonTask from "./micro/ButtonTask";
+import {Button} from "./micro/Button";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+    return (
+        <div className="App">
+             <MapTask cars={TopCars}/>
+            {/* {<Button/>}*/}
+            {/*<UseStateTask/>*/}
+            {/* <FilterTask/>*/}
+
+        </div>
+    );
 }
 
 export default App;
