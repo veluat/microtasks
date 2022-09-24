@@ -30,10 +30,7 @@ const FilterTaskComponent = (props: FilterTaskComponentType) => {
             </ul>
             <div style={{marginLeft: '35px'}}>
                 <button onClick={() => props.currentButton('all')}>all</button>
-                <button onClick={() => {
-                    props.currentButton('rubles')
-                }}>rubles
-                </button>
+                <button onClick={() => {props.currentButton('rubles')}}>rubles</button>
                 <button onClick={() => props.currentButton('dollars')}>dollars</button>
             </div>
         </>

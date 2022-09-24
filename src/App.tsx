@@ -6,17 +6,21 @@ import TopCars from "./micro/MapCars";
 import UseStateTask from "./micro/UseStateTask";
 import FilterTask from "./micro/FilterTask"
 import ButtonTask from "./micro/ButtonTask";
-import {Button} from "./micro/Button";
+import {ButtonForButtonTask} from "./micro/ButtonForButtonTask";
+import {MessageTask} from "./micro/MessageTask";
+import {FullInput} from "./micro/FullInput";
 
 function App() {
 
 
     return (
         <div className="App">
-             <MapTask cars={TopCars}/>
-            {/* {<Button/>}*/}
+            {/* <MapTask cars={TopCars}/>*/}
+            {/* {<ButtonForButtonTask/>}*/}
             {/*<UseStateTask/>*/}
-            {/* <FilterTask/>*/}
+             {/*<FilterTask/>*/}
+
+            <MessageTask/>
 
         </div>
     );

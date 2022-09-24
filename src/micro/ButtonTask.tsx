@@ -1,6 +1,6 @@
 import React from 'react';
 import "../App";
-import {Button} from "./Button";
+import {ButtonForButtonTask} from "./ButtonForButtonTask";
 
 type ButtonTaskType = {
     name: string
